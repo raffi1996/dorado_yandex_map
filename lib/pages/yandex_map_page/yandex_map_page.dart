@@ -164,16 +164,16 @@ class _YandexMapPageState extends State<YandexMapPage> {
             longitude: long!,
           ),
           onTap: _navigateToPoint,
-          // icon: PlacemarkIcon.single(
-          //   PlacemarkIconStyle(
-          //     scale: 1,
-          //     isVisible: true,
-          //     isFlat: true,
-          //     image: BitmapDescriptor.fromBytes(
-          //       widget.markers[widget.markers.length - 1],
-          //     ),
-          //   ),
-          // ),
+          icon: PlacemarkIcon.single(
+            PlacemarkIconStyle(
+              scale: 1,
+              isVisible: true,
+              isFlat: true,
+              image: BitmapDescriptor.fromBytes(
+                widget.markers[widget.markers.length - 1],
+              ),
+            ),
+          ),
         ),
       );
       _controller.moveCamera(
